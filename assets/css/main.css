@@ -2338,7 +2338,7 @@ input, select, textarea {
 
 			#main > section.one {
 				background-color: #81918E;
-				background-image: url("../../images/image.jpg");
+				background-image: url("../../images/back.jpg");
 			}
 
 			#main > section.two {
@@ -2721,3 +2721,29 @@ input, select, textarea {
 				}
 
 	}
+
+
+/* Header Text Visibility Fix */
+#main > section.cover header {
+    background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent black background */
+    padding: 20px;
+    border-radius: 10px;
+    display: inline-block;
+}
+
+#main > section.cover header h2 {
+    color: #ffffff; /* White text color for better contrast */
+    font-weight: 600;
+}
+
+#main > section.cover header p {
+    color: #ffffff;
+}
+
+/* Mobile Adjustment */
+@media screen and (max-width: 736px) {
+    #main > section.cover header {
+        padding: 15px;
+        border-radius: 8px;
+    }
+}
